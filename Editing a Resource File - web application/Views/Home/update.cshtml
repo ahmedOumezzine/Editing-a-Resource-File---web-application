@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "update";
+}
+
+<h2>update</h2>
+@ViewBag.Text2
+<form id="form1" action="@Url.Action("update2","Home")" method="post">
+    <input type="hidden" name="Id" value="@ViewBag.Id" />
+    <input type="hidden" name="file" value="@ViewBag.file" />
+    <input name="txtResourceValue" value="@ViewBag.Text" />
+    <input type="submit" value="submit" />
+</form>

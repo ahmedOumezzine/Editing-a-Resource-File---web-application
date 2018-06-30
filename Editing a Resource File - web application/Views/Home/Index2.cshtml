@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<h2>Index2</h2>
+
+
+<table>
+    @for (int i = 0; i < ViewBag.slist.Count; i++)
+    {
+    <tr>
+        <td>@ViewBag.slist.GetKey(i)</td>
+        <td>@ViewBag.slist.GetByIndex(i)</td>
+        <td><a href="@Url.Action("Update","Home",new { key= ViewBag.slist.GetKey(i) ,file=ViewBag.file,id=i})"> update </a></td>
+    </tr>
+    }
+</table>

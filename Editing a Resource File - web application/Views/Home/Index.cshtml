@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<form id="form1" action="@Url.Action("Index2","Home")" method="post">
+    <select name="filenameselect" id="filenameselect">
+        @foreach (string item in Model)
+        {
+            <option value="@item">@item</option>
+        }
+    </select>
+    <input type="submit" value="sumbit" />
+</form>
+
+
