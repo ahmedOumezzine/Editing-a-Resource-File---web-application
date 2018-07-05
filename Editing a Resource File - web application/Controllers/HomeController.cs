@@ -41,10 +41,8 @@ namespace Editing_a_Resource_File___web_application.Controllers
         [HttpPost]
         public ActionResult Index2(string filenameselect)
         {
-            string filename = Request.PhysicalApplicationPath +
-                "App_GlobalResources\\" + filenameselect;
-            Stream stream = new FileStream(filename, FileMode.Open,
-                FileAccess.Read, FileShare.Read);
+            string filename = Request.PhysicalApplicationPath +"App_GlobalResources\\" + filenameselect;
+            Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.Read);
             ResXResourceReader RrX = new ResXResourceReader(stream);
             IDictionaryEnumerator RrEn = RrX.GetEnumerator();
             SortedList slist = new SortedList();
