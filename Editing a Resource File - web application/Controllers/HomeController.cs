@@ -29,7 +29,10 @@ namespace Editing_a_Resource_File___web_application.Controllers
             foreach (FileInfo filInfo in dirInfo.GetFiles())
             {
                 string filename = filInfo.Name;
-                cmbResources.Add(filename);
+                if(!filename.EndsWith(".designer.cs"))
+                {
+                    cmbResources.Add(filename);
+                }
             }
            
             return View(cmbResources);
