@@ -26,23 +26,24 @@ namespace Editing_a_Resource_File___web_application.Controllers
             ViewBag.cmbPages = ResxEditor.GetResources.GetListPagess(Request.PhysicalApplicationPath);
             return View();
         }
+        public JsonResult GetAllRessource(String Page)
+        {
+            List <String> items = ResxEditor.GetResources.GetListRessourcess(Request.PhysicalApplicationPath, Page);
+            return Json(items, JsonRequestBehavior.AllowGet);
+        }
 
         [HttpPost]
-        public ActionResult Index2(string filenameselect)
+        public ActionResult Index2(Editing_a_Resource_File___web_application.Models.RessourcesModel forms)
+
         {
-            string filename = Request.PhysicalApplicationPath +"App_GlobalResources\\" + filenameselect;
-            Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.Read);
-            ResXResourceReader RrX = new ResXResourceReader(stream);
-            IDictionaryEnumerator RrEn = RrX.GetEnumerator();
-            SortedList slist = new SortedList();
-            while (RrEn.MoveNext())
+            if (!ModelState.IsValid)
             {
-                slist.Add(RrEn.Key, RrEn.Value);
+                return View(forms);
             }
-            RrX.Close();
-            stream.Dispose();
-            ViewBag.file = filenameselect; 
-            ViewBag.slist = slist;
+            filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + forms.cmbPages + "\\"+ forms.cmbressource + "." + forms.cmblanguages + ".resx";
+        
+            ViewBag.file = forms.cmbPages + "\\" + forms.cmbressource + forms.cmblanguages ;
+            ViewBag.slist = ResxEditor.GetResources.GetDetailRessources(filename);
             return View();
         }
 

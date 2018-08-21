@@ -62,6 +62,7 @@ C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a 
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Newtonsoft.Json.dll
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\ResxEditor.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Diagnostics.DiagnosticSource.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.Helpers.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.Mvc.dll
@@ -71,6 +72,7 @@ C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a 
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.WebPages.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.WebPages.Razor.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\WebGrease.dll
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\ResxEditor.pdb
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.Helpers.xml
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.Mvc.xml
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\System.Web.Optimization.xml
@@ -86,10 +88,7 @@ C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a 
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Microsoft.AI.Web.xml
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.csprojAssemblyReference.cache
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.csproj.CoreCompileInputs.cache
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.csproj.CopyComplete
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.pdb
-C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\ResxEditor.dll
-C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\bin\ResxEditor.pdb
