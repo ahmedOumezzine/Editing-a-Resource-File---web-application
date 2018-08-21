@@ -42,7 +42,7 @@ namespace Editing_a_Resource_File___web_application.Controllers
             }
             filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + forms.cmbPages + "\\"+ forms.cmbressource + "." + forms.cmblanguages + ".resx";
         
-            ViewBag.file = forms.cmbPages + "\\" + forms.cmbressource + forms.cmblanguages ;
+            ViewBag.file = forms.cmbPages + "\\" + forms.cmbressource+"." + forms.cmblanguages ;
             ViewBag.slist = ResxEditor.GetResources.GetDetailRessources(filename);
             return View();
         }
@@ -51,7 +51,7 @@ namespace Editing_a_Resource_File___web_application.Controllers
 
         public ActionResult Update(string Id, string key,string file)
         {
-            filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + file;
+            filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + file+".resx";
             ResXResourceSet rset = new ResXResourceSet(filename);
             ViewBag.file = file;
             ViewBag.Id = Id;
@@ -63,7 +63,7 @@ namespace Editing_a_Resource_File___web_application.Controllers
         public ActionResult Update2(string Id ,string file, string txtResourceValue)
         {
             int id = Convert.ToInt32(Id);
-            filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + file;
+            filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + file + ".resx";
             XmlDocument xmlDoc = new XmlDocument();
             xmlDoc.Load(filename);
             XmlNodeList nlist = xmlDoc.GetElementsByTagName("data");
