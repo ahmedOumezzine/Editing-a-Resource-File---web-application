@@ -4,6 +4,9 @@ A small utility application to edit .NET string resources inside multiple resour
 #### Create your resource files in Visual Studio .NET 
 Add a resource file for each language you want to support and place them in the "App_GlobalResources" folder of your project. Keep the naming schema "Resources.< language >.resx", e.g. "Resources.fr.resx" for  French language.
 
+#### demo online 
+you can check demo online via this link : http://editingresourcefile-webapplication.azurewebsites.net/
+
 #### Usage example
 
 run the application you will see all the file resources (.resx) as in picture 1:
