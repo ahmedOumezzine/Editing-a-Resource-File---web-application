@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    List<ResxEditor.Language> cmblanguages = ViewBag.cmblanguages;
+    List<String> cmbPages = ViewBag.cmbPages;
+}
+
+<br />
+<div class="jumbotron">
+    <h1 class="display-4">Resource .resx files</h1>
+    <p class="lead">
+        Editing Reading Resource .resx files In web Based application
+    </p>
+    <hr class="my-4">
+    <p>
+        A resource file is an XML file that can contain strings and other resources, such as image file paths. <br />
+        Resource files are typically used to store user interface strings that must be translated into other languages. <br />
+        This is because you can create a separate resource file for each language into which you want to translate a Web page.
+    </p>
+</div>
+
+<div class="col-lg-12 row">
+    <div class="col-lg-4"></div>
+    <div class="col-lg-4">
+        <form id="form1" action="@Url.Action("Index2","Home")" method="post">
+            <div class="form-group">
+                <label for="filenameselect">
+                    choice the language you want to edit it
+                </label>
+                <select name="filenameselect" id="filenameselect" class="form-control form-control-lg">
+                    @foreach (string item in cmbPages)
+                    {
+                        <option value="@item">@item</option>
+                    }
+                </select>
+                <small id="emailHelp" class="form-text text-muted">A resource file is a text file with the extension .resx</small>
+            </div>
+            <div class="form-group">
+                <label for="filenameselect">
+                    choice the language you want to edit it
+                </label>
+                <select name="filenameselect" id="filenameselect" class="form-control form-control-lg">
+                    @foreach (ResxEditor.Language item in cmblanguages)
+                    {
+                        <option value="@item.Code">@item.Name</option>
+                    }
+                </select>
+                <small id="emailHelp" class="form-text text-muted">A resource file is a text file with the extension .resx</small>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-lg-4"></div>
+</div>
+
+
+

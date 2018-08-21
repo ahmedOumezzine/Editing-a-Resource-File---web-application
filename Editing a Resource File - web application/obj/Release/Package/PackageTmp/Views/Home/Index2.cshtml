@@ -1,0 +1,32 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<div class="alert alert-primary text-center" role="alert" style=" color: #004085; background-color: #cce5ff; border-color: #b8daff; ">
+    <h1> @ViewBag.file</h1>
+</div>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name Ressource</th>
+            <th scope="col">Value Ressource</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @for (int i = 0; i < ViewBag.slist.Count; i++)
+        {
+            <tr>
+                <th scope="row">@i</th>
+                <th scope="row">@ViewBag.slist.GetKey(i)</th>
+                <td>@ViewBag.slist.GetByIndex(i)</td>
+                <td><a href="@Url.Action("Update","Home",new { key= ViewBag.slist.GetKey(i) ,file=ViewBag.file,id=i})"> update </a></td>
+            </tr>
+        }
+    </tbody>
+
+</table>

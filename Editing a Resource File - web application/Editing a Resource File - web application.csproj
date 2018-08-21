@@ -47,6 +47,9 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="ResxEditor">
+      <HintPath>..\ResxEditor\bin\Debug\ResxEditor.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -146,6 +149,46 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_GlobalResources\Aboutus\Aboutus.ar.designer.cs">
+      <DependentUpon>Aboutus.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Aboutus\Aboutus.designer.cs">
+      <DependentUpon>Aboutus.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Contactus\Contactus.ar.designer.cs">
+      <DependentUpon>Contactus.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Contactus\Contactus.designer.cs">
+      <DependentUpon>Contactus.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Home.ar.designer.cs">
+      <DependentUpon>Home.ar.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\Home\Home.designer.cs">
+      <DependentUpon>Home.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="App_GlobalResources\language\language.ar.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>language.ar.resx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\language\language.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>language.resx</DependentUpon>
+    </Compile>
     <Compile Include="App_GlobalResources\Resource.ar.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -229,6 +272,7 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\EditingResourceFile-webapplication - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -279,50 +323,110 @@
     <Content Include="App_GlobalResources\Resource.ar.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.ar.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.de.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.de.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.el.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.el.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.fr.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.fr.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.hi.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.hi.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.it.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.it.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.ja.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.ja.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.ko.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.ko.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.pt.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.pt.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.ru.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.ru.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
     </Content>
     <Content Include="App_GlobalResources\Resource.ta.resx">
       <Generator>GlobalResourceProxyGenerator</Generator>
       <LastGenOutput>Resource.ta.designer.cs</LastGenOutput>
+      <CustomToolNamespace>Resources</CustomToolNamespace>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\language\language.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>language.ar.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\language\language.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>language.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Home\Home.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Home.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Home\Home.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Home.ar.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Contactus\Contactus.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Contactus.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Contactus\Contactus.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Contactus.ar.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Aboutus\Aboutus.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Aboutus.designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Aboutus\Aboutus.ar.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Aboutus.ar.designer.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <PropertyGroup>

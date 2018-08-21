@@ -22,20 +22,9 @@ namespace Editing_a_Resource_File___web_application.Controllers
         public string filename;
         public ActionResult Index()
         {
-            List<string> cmbResources = new List<string>();
-            string resourcespath =
-               Request.PhysicalApplicationPath + "App_GlobalResources";
-            DirectoryInfo dirInfo = new DirectoryInfo(resourcespath);
-            foreach (FileInfo filInfo in dirInfo.GetFiles())
-            {
-                string filename = filInfo.Name;
-                if(!filename.EndsWith(".designer.cs"))
-                {
-                    cmbResources.Add(filename);
-                }
-            }
-           
-            return View(cmbResources);
+            ViewBag.cmblanguages = ResxEditor.Getlanguages.GetLists(Request.PhysicalApplicationPath, "language");
+            ViewBag.cmbPages = ResxEditor.GetResources.GetListPagess(Request.PhysicalApplicationPath);
+            return View();
         }
 
         [HttpPost]

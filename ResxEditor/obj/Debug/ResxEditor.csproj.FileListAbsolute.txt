@@ -1,0 +1,5 @@
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\ResxEditor\bin\Debug\ResxEditor.dll
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\ResxEditor\bin\Debug\ResxEditor.pdb
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\ResxEditor\obj\Debug\ResxEditor.csproj.CoreCompileInputs.cache
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\ResxEditor\obj\Debug\ResxEditor.dll
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\ResxEditor\obj\Debug\ResxEditor.pdb
