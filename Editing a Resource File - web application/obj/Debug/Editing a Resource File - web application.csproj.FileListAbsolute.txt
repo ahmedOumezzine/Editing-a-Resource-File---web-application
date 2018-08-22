@@ -92,3 +92,4 @@ C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a 
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.csproj.CopyComplete
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.dll
 C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.pdb
+C:\Users\ahmed\source\repos\Editing a Resource File - web application\Editing a Resource File - web application\obj\Debug\Editing a Resource File - web application.csprojAssemblyReference.cache

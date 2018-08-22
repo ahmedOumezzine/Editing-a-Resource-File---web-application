@@ -2,10 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ResxEditor
 {
@@ -23,22 +20,23 @@ namespace ResxEditor
             return cmbPages;
         }
 
-        public static List<String> GetListRessourcess(String PhysicalApplicationPath,String Page)
+        public static List<String> GetListRessourcess(String PhysicalApplicationPath, String Page)
         {
             List<String> cmbresources = new List<String>();
-            string resourcespath = PhysicalApplicationPath + "App_GlobalResources/"+ Page;
+            string resourcespath = PhysicalApplicationPath + "App_GlobalResources/" + Page;
             DirectoryInfo dirInfo = new DirectoryInfo(resourcespath);
             foreach (FileInfo filInfo in dirInfo.GetFiles())
             {
                 string filename = filInfo.Name.Split('.')[0];
                 if (!filename.ToUpper().EndsWith(".designer.cs".ToUpper()))
                 {
-                  if(!cmbresources.Contains(filename))
+                    if (!cmbresources.Contains(filename))
                         cmbresources.Add(filename);
                 }
             }
             return cmbresources;
         }
+
         public static SortedList GetDetailRessources(String filename)
         {
             Stream stream = new FileStream(filename, FileMode.Open, FileAccess.Read, FileShare.Read);
@@ -53,7 +51,5 @@ namespace ResxEditor
             stream.Dispose();
             return slist;
         }
-
-
     }
 }
