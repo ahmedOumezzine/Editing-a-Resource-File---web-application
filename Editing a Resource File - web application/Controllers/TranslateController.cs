@@ -19,17 +19,6 @@ namespace Editing_a_Resource_File___web_application.Controllers
             ViewBag.cmbPages = ResxEditor.GetResources.GetListPagess(Request.PhysicalApplicationPath);
             return View();
         }
-        public JsonResult GetAllRessource(String Page)
-        {
-            List<String> items = ResxEditor.GetResources.GetListRessourcess(Request.PhysicalApplicationPath, Page);
-            return Json(items, JsonRequestBehavior.AllowGet);
-        }
-
-        public JsonResult GetAllLanguages(String Page)
-        {
-            List<ResxEditor.Language> items = ResxEditor.Getlanguages.GetLists(Request.PhysicalApplicationPath, Page);
-            return Json(items, JsonRequestBehavior.AllowGet);
-        }
 
         [HttpPost]
         public ActionResult Index2(Editing_a_Resource_File___web_application.Models.RessourcesModel forms)
@@ -47,10 +36,23 @@ namespace Editing_a_Resource_File___web_application.Controllers
             {
                 filename = Request.PhysicalApplicationPath + "App_GlobalResources\\" + forms.cmbPages + "\\" + forms.cmbressource + "." + forms.cmblanguages + ".resx";
             }
-            ViewBag.file = filename;
+            ViewBag.file = forms.cmbPages + "\\" + forms.cmbressource;
             ViewBag.slist = ResxEditor.GetResources.GetDetailRessources(filename);
             return View();
         }
+
+        public JsonResult GetAllRessource(String Page)
+        {
+            List<String> items = ResxEditor.GetResources.GetListRessourcess(Request.PhysicalApplicationPath, Page);
+            return Json(items, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult GetAllLanguages(String Page)
+        {
+            List<ResxEditor.Language> items = ResxEditor.Getlanguages.GetLists(Request.PhysicalApplicationPath, Page);
+            return Json(items, JsonRequestBehavior.AllowGet);
+        }
+
 
         public ActionResult Update(string Id, string key, string file)
         {
