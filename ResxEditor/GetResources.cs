@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Resources;
+using System.Xml;
 
 namespace ResxEditor
 {
@@ -50,6 +51,26 @@ namespace ResxEditor
             RrX.Close();
             stream.Dispose();
             return slist;
+        }
+
+        public static String GetString(String filename,String key)
+        {
+            ResXResourceSet rset = new ResXResourceSet(filename);
+            return rset.GetString(key);
+        }
+
+        public static String Update(String filename, int key,String txtResourceValue)
+        {
+            XmlDocument xmlDoc = new XmlDocument();
+            xmlDoc.Load(filename);
+            XmlNodeList nlist = xmlDoc.GetElementsByTagName("data");
+            XmlNode childnode = nlist.Item(key);
+            childnode.Attributes["xml:space"].Value = "default";
+            xmlDoc.Save(filename);
+            XmlNode lastnode = childnode.SelectSingleNode("value");
+            lastnode.InnerText = txtResourceValue;
+            xmlDoc.Save(filename);
+            return "Resource File Updated...";
         }
     }
 }
