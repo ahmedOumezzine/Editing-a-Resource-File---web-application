@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ResxEditor</id>
+    <version>0.0.2</version>
+    <title>ResxEditor</title>
+    <authors>Ahmed Oumezzine</authors>
+    <owners>Ahmed Oumezzine</owners>
+    <projectUrl>https://github.com/ahmedOumezzine/Editing-a-Resource-File---web-application</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>you can easy now Editing or Reading Resource .resx files In web Based application</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>ResxEditor ASP ASP.NET MVC Reading Resource .resx </tags>
+	 <dependencies>
+            <dependency id="System.Resources.ResourceManager" version="4.3.0" />
+        </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\Debug\ResxEditor.dll" target="lib\net45"  />
+    </files>
+  
+</package>
